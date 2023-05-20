@@ -134,7 +134,7 @@ session_start();
                 if($ticket['files']){
                     ?>
                     <div >
-                    <a href="../upload/<?php echo $ticket['files'] ?>" tabindex="-1"><strong>click here</strong></a>
+                    <a href="../upload/<?php echo $ticket['files'] ?>" tabindex="-1"><strong>File</strong></a>
                     </div>
                     <?php } 
                 
