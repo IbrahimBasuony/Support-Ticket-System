@@ -119,19 +119,16 @@ session_start();
                                     <div class="input-group mb-3">
                                     <label for="description" class="col-xl-4 col-lg-4 col-md-4 col-sm-5 mb-2">Reply</label>
                                     <textarea readonly  class="form-control validate col-xl-9 col-lg-8 col-md-8 col-sm-7" rows="3" placeholder="Product Description" required><?php echo $reply['reply'] ;?></textarea>
-                                </div>
-                                <?php if($reply['file']){ ?>
+                                    <?php if($reply['file']){ ?>
                                 <div >
-                                <a href="../upload/<?php echo $reply['file'] ?>" tabindex="-1"><strong>click here</strong></a>
+                                <a href="../upload/<?php echo $reply['file'] ?>" tabindex="-1"><strong>File</strong></a>
                                 </div>
-                                <?php } 
-                                       }
+                                <?php } ?>
+                                </div>
+                                   <?php    }
                                 } 
+                                    ?>
 
-
-                                            ?>
-
-                                
                                 <form action="handle/handle-reply.php?id=<?php echo $id ?>"method="post" class="tm-edit-product-form"enctype="multipart/form-data">
                                 <div class="input-group mb-3">
                                     <label for="description" class="col-xl-4 col-lg-4 col-md-4 col-sm-5 mb-2">Description</label>
