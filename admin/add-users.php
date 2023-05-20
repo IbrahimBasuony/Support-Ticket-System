@@ -28,7 +28,7 @@
 <?php 
 session_start();
 if(! isset($_SESSION['userId']) || $_SESSION['role'] != "admin"){
-    header('location:../login.php');
+   header('location:logout.php');
 }
 ?>
     <div class="container">
